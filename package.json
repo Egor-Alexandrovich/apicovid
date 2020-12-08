@@ -1,0 +1,43 @@
+{
+  "name": "task-name",
+  "version": "2.0.0",
+  "description": "Advanced start pack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress",
+    "start": "webpack-dev-server --open",
+    "lint": "eslint src",
+    "lintF": "eslint --fix src",
+    "test": "jest",
+    "coverage:full": "jest --coverage --coverage-reporters=lcov"
+  },
+  "author": "Egor",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "copy-webpack-plugin": "^5.1.2",
+    "css-loader": "^3.2.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "file-loader": "^4.3.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "mini-css-extract-plugin": "^0.8.2",
+    "node-sass": "^4.13.0",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  }
+}
